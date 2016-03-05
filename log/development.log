@@ -10,3 +10,15 @@ Started GET "/" for 111.86.194.111 at 2016-03-04 16:25:07 +0000
 Processing by ApplicationController#hello as HTML
   Rendered text template (0.0ms)
 Completed 200 OK in 52ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-04 16:48:23 +0000
+Processing by ApplicationController#hello as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 41ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-04 16:48:25 +0000
+Processing by ApplicationController#hello as HTML
+  Rendered text template (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
