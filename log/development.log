@@ -1572,3 +1572,1045 @@ Processing by WordsController#index as HTML
   [1m[36mWord Load (0.3ms)[0m  [1mSELECT "words".* FROM "words"[0m
   Rendered words/index.html.erb within layouts/application (5.3ms)
 Completed 200 OK in 83ms (Views: 81.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/new" for 111.86.194.111 at 2016-03-06 15:12:59 +0000
+Processing by WordsController#new as HTML
+  Rendered words/_form.html.erb (3.8ms)
+  Rendered words/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 69ms (Views: 67.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 111.86.194.111 at 2016-03-06 15:13:00 +0000
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZqEH6wKjIUGNuFDIBCkmg40Eua2upQoJqxUhM71OZKxAup/vLPNMukKCTYkORo3vFVpBmcXUE+pcXDxhxzOQgQ==", "word"=>{"conjunction"=>""}, "commit"=>"Create Word"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered words/_form.html.erb (6.3ms)
+  Rendered words/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 60ms (Views: 54.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words" for 111.86.194.111 at 2016-03-06 15:13:18 +0000
+Processing by WordsController#index as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT "words".* FROM "words"
+  Rendered words/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-19 02:01:26 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 445ms (Views: 429.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-5c5d2504655102d08234dcea0a6ee8e2e2d35a7743a389be01394c2a34b95a46.css?body=1" for 111.86.194.111 at 2016-03-19 02:01:27 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:01:27 +0000
+
+
+Started GET "/assets/words.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:01:27 +0000
+
+
+Started GET "/assets/application.self-0c5ba82307f35f41e4e1c3d99e7728b621726be24c618f66ed30027d5b885428.css?body=1" for 111.86.194.111 at 2016-03-19 02:01:27 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 111.86.194.111 at 2016-03-19 02:01:27 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 111.86.194.111 at 2016-03-19 02:01:27 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 111.86.194.111 at 2016-03-19 02:01:27 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 111.86.194.111 at 2016-03-19 02:01:27 +0000
+
+
+Started GET "/assets/words.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 111.86.194.111 at 2016-03-19 02:01:27 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 111.86.194.111 at 2016-03-19 02:01:27 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:01:35 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 67ms (Views: 52.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:08:02 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 157ms (Views: 154.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:08:02 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-cba999286b531e646c54aec853c419619e11b82f5e62368ac4f3f3bf4c5066ca.css?body=1" for 111.86.194.111 at 2016-03-19 02:08:03 +0000
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-19 02:08:21 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 89ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-19 02:09:04 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-cba999286b531e646c54aec853c419619e11b82f5e62368ac4f3f3bf4c5066ca.css?body=1" for 111.86.194.111 at 2016-03-19 02:09:04 +0000
+
+
+Started GET "/assets/words.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:09:04 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 111.86.194.111 at 2016-03-19 02:09:04 +0000
+
+
+Started GET "/assets/scaffolds.self-5c5d2504655102d08234dcea0a6ee8e2e2d35a7743a389be01394c2a34b95a46.css?body=1" for 111.86.194.111 at 2016-03-19 02:09:04 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 111.86.194.111 at 2016-03-19 02:09:04 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:09:04 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 111.86.194.111 at 2016-03-19 02:09:04 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 111.86.194.111 at 2016-03-19 02:09:04 +0000
+
+
+Started GET "/assets/words.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 111.86.194.111 at 2016-03-19 02:09:05 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 111.86.194.111 at 2016-03-19 02:09:05 +0000
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-19 02:09:10 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-5c5d2504655102d08234dcea0a6ee8e2e2d35a7743a389be01394c2a34b95a46.css?body=1" for 111.86.194.111 at 2016-03-19 02:09:10 +0000
+
+
+Started GET "/assets/words.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:09:10 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:09:10 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 111.86.194.111 at 2016-03-19 02:09:10 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 111.86.194.111 at 2016-03-19 02:09:10 +0000
+
+
+Started GET "/assets/application.self-cba999286b531e646c54aec853c419619e11b82f5e62368ac4f3f3bf4c5066ca.css?body=1" for 111.86.194.111 at 2016-03-19 02:09:10 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 111.86.194.111 at 2016-03-19 02:09:10 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 111.86.194.111 at 2016-03-19 02:09:10 +0000
+
+
+Started GET "/assets/words.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 111.86.194.111 at 2016-03-19 02:09:10 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 111.86.194.111 at 2016-03-19 02:09:10 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:09:25 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 49.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-19 02:09:52 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-cba999286b531e646c54aec853c419619e11b82f5e62368ac4f3f3bf4c5066ca.css?body=1" for 111.86.194.111 at 2016-03-19 02:09:53 +0000
+
+
+Started GET "/assets/scaffolds.self-5c5d2504655102d08234dcea0a6ee8e2e2d35a7743a389be01394c2a34b95a46.css?body=1" for 111.86.194.111 at 2016-03-19 02:10:03 +0000
+
+
+Started GET "/assets/application.self-cba999286b531e646c54aec853c419619e11b82f5e62368ac4f3f3bf4c5066ca.css?body=1" for 111.86.194.111 at 2016-03-19 02:10:03 +0000
+
+
+Started GET "/assets/words.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:10:03 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:10:03 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:12:58 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:13:13 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 56ms (Views: 53.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:16:31 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:16:32 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:16:34 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:16:53 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-cba999286b531e646c54aec853c419619e11b82f5e62368ac4f3f3bf4c5066ca.css?body=1" for 111.86.194.111 at 2016-03-19 02:16:59 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:16:59 +0000
+
+
+Started GET "/assets/scaffolds.self-5c5d2504655102d08234dcea0a6ee8e2e2d35a7743a389be01394c2a34b95a46.css?body=1" for 111.86.194.111 at 2016-03-19 02:17:00 +0000
+
+
+Started GET "/assets/words.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:17:00 +0000
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-19 02:18:07 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 436ms (Views: 415.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7b2ca03656f8f16bb0891369281089b004ce7dc7299d7128337d627e0af4ef05.css?body=1" for 111.86.194.111 at 2016-03-19 02:18:08 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:18:29 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 76ms (Views: 62.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:18:33 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.5ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:18:36 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.5ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 92ms (Views: 87.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:18:37 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 72ms (Views: 69.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:18:39 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 88ms (Views: 85.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:18:59 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 64ms (Views: 61.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-19 02:21:35 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 59ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0bd0e1d948292dbad8d9349b48d4de45347182a2eb6b2238190e3bbc493f65a4.css?body=1" for 111.86.194.111 at 2016-03-19 02:21:35 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:21:38 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 40.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:21:40 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 51.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:21:41 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:21:44 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.5ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 51.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:21:51 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-19 02:22:49 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:26:40 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.5ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 85ms (Views: 81.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:26:41 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 65ms (Views: 63.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-0d210be74ed235288385458a56adf19fd02e8b632d74362d60aaf12de7f0470c.css?body=1" for 111.86.194.111 at 2016-03-19 02:26:41 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:26:43 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.5ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:26:45 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:27:03 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:27:04 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:27:25 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:27:25 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-0d210be74ed235288385458a56adf19fd02e8b632d74362d60aaf12de7f0470c.css?body=1" for 111.86.194.111 at 2016-03-19 02:27:25 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:27:35 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.5ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 86ms (Views: 83.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-7f03683f851bbaf537934a5ad2cece087b0840b91e495cb53dfc5772de9a733a.css?body=1" for 111.86.194.111 at 2016-03-19 02:27:35 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:27:37 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:28:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 408ms (Views: 377.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:28:38 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-1d27187b1d78f129a88c4c95425590527b12f90c7016861521c611debbc2b316.css?body=1" for 111.86.194.111 at 2016-03-19 02:28:39 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:28:42 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-19 02:29:03 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 90ms (Views: 88.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:29:08 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 77ms (Views: 74.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:29:23 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-5c5d2504655102d08234dcea0a6ee8e2e2d35a7743a389be01394c2a34b95a46.css?body=1" for 111.86.194.111 at 2016-03-19 02:29:23 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:29:23 +0000
+
+
+Started GET "/assets/words.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:29:23 +0000
+
+
+Started GET "/assets/application.self-1d27187b1d78f129a88c4c95425590527b12f90c7016861521c611debbc2b316.css?body=1" for 111.86.194.111 at 2016-03-19 02:29:23 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 111.86.194.111 at 2016-03-19 02:29:23 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 111.86.194.111 at 2016-03-19 02:29:24 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 111.86.194.111 at 2016-03-19 02:29:24 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 111.86.194.111 at 2016-03-19 02:29:24 +0000
+
+
+Started GET "/assets/words.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 111.86.194.111 at 2016-03-19 02:29:24 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 111.86.194.111 at 2016-03-19 02:29:24 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:29:32 +0000
+
+
+Started GET "/assets/words.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:29:32 +0000
+
+
+Started GET "/assets/application.self-1d27187b1d78f129a88c4c95425590527b12f90c7016861521c611debbc2b316.css?body=1" for 111.86.194.111 at 2016-03-19 02:29:33 +0000
+
+
+Started GET "/assets/scaffolds.self-5c5d2504655102d08234dcea0a6ee8e2e2d35a7743a389be01394c2a34b95a46.css?body=1" for 111.86.194.111 at 2016-03-19 02:29:33 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:33:48 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 54ms (Views: 51.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:34:03 +0000
+
+
+Started GET "/assets/application.self-1d27187b1d78f129a88c4c95425590527b12f90c7016861521c611debbc2b316.css?body=1" for 111.86.194.111 at 2016-03-19 02:34:03 +0000
+
+
+Started GET "/assets/words.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:34:03 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:34:59 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.5ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 376ms (Views: 350.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/scaffolds.self-5c5d2504655102d08234dcea0a6ee8e2e2d35a7743a389be01394c2a34b95a46.css?body=1" for 111.86.194.111 at 2016-03-19 02:34:59 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:35:00 +0000
+
+
+Started GET "/assets/words.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:35:00 +0000
+
+
+Started GET "/assets/application.self-3fe70f52d410d104c7b4235b2f4eda3a66771a9651e5e26206222c589e54f580.css?body=1" for 111.86.194.111 at 2016-03-19 02:35:00 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 111.86.194.111 at 2016-03-19 02:35:00 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 111.86.194.111 at 2016-03-19 02:35:00 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 111.86.194.111 at 2016-03-19 02:35:01 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 111.86.194.111 at 2016-03-19 02:35:01 +0000
+
+
+Started GET "/assets/words.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 111.86.194.111 at 2016-03-19 02:35:01 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 111.86.194.111 at 2016-03-19 02:35:01 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:35:19 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 63ms (Views: 61.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-3fe70f52d410d104c7b4235b2f4eda3a66771a9651e5e26206222c589e54f580.css?body=1" for 111.86.194.111 at 2016-03-19 02:35:20 +0000
+
+
+Started GET "/assets/scaffolds.self-5c5d2504655102d08234dcea0a6ee8e2e2d35a7743a389be01394c2a34b95a46.css?body=1" for 111.86.194.111 at 2016-03-19 02:35:20 +0000
+
+
+Started GET "/assets/words.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:35:20 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.86.194.111 at 2016-03-19 02:35:20 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 111.86.194.111 at 2016-03-19 02:35:20 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 111.86.194.111 at 2016-03-19 02:35:20 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 111.86.194.111 at 2016-03-19 02:35:20 +0000
+
+
+Started GET "/assets/words.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 111.86.194.111 at 2016-03-19 02:35:20 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 111.86.194.111 at 2016-03-19 02:35:20 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 111.86.194.111 at 2016-03-19 02:35:20 +0000
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-19 02:35:47 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 191ms (Views: 190.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:35:50 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 53ms (Views: 50.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:35:54 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:35:56 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:35:59 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:40:41 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:40:44 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:45:59 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (128.0ms)
+Completed 200 OK in 850ms (Views: 825.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-799565ec903b22d68b728b54b19d29cfbce4c24751e0a07c82e3457f4ebec275.css?body=1" for 111.86.194.111 at 2016-03-19 02:46:01 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:39 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 64ms (Views: 60.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:39 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-799565ec903b22d68b728b54b19d29cfbce4c24751e0a07c82e3457f4ebec275.css?body=1" for 111.86.194.111 at 2016-03-19 02:46:40 +0000
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:42 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 204ms (Views: 201.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:44 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (8.5ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 88ms (Views: 76.8ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:48 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.5ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 204ms (Views: 200.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:49 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 177ms (Views: 175.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:50 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 102ms (Views: 45.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:51 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 123ms (Views: 121.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:53 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 45ms (Views: 42.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:53 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 90ms (Views: 88.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:55 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:56 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 107ms (Views: 104.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:57 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:58 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.5ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 59ms (Views: 56.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:59 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.7ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 65ms (Views: 62.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:46:59 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 168ms (Views: 166.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:47:00 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.5ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:47:01 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 55ms (Views: 52.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:47:02 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 185ms (Views: 182.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:47:03 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 189ms (Views: 187.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:47:04 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 102ms (Views: 100.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:47:05 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 142ms (Views: 140.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:47:06 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:47:07 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:47:08 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 234ms (Views: 231.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:47:09 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 165ms (Views: 36.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-19 02:47:16 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 111.86.194.111 at 2016-03-19 02:47:25 +0000
+Processing by WordsController#index as HTML
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT "words".* FROM "words"[0m
+  Rendered words/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/new" for 111.86.194.111 at 2016-03-19 02:47:28 +0000
+Processing by WordsController#new as HTML
+  Rendered words/_form.html.erb (183.0ms)
+  Rendered words/new.html.erb within layouts/application (191.6ms)
+Completed 200 OK in 231ms (Views: 229.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 111.86.194.111 at 2016-03-19 02:48:00 +0000
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"shSZd7UMIc82rr7DFRArBNOAjm7yrOhG62yywgXeK0+O+JBQbz2VSxXBV4WRTskfPd1uqrfKpqPmGzFYwaxdPA==", "word"=>{"conjunction"=>"最大文字数テストです"}, "commit"=>"Create Word"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "words" ("conjunction", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["conjunction", "最大文字数テストです"], ["created_at", "2016-03-19 02:48:00.911316"], ["updated_at", "2016-03-19 02:48:00.911316"]]
+  [1m[35m (17.6ms)[0m  commit transaction
+Redirected to https://get-setsuzokushi-hirofumikajiwara-2.c9users.io/words/7
+Completed 302 Found in 29ms (ActiveRecord: 18.3ms)
+
+
+Started GET "/words/7" for 111.86.194.111 at 2016-03-19 02:48:01 +0000
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mWord Load (0.5ms)[0m  [1mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered words/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 161ms (Views: 141.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words" for 111.86.194.111 at 2016-03-19 02:48:03 +0000
+Processing by WordsController#index as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT "words".* FROM "words"
+  Rendered words/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-19 02:48:15 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:48:18 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 209ms (Views: 206.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:48:20 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.5ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 88ms (Views: 85.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:48:21 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:48:25 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.5ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 216ms (Views: 214.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:48:26 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.6ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 97ms (Views: 94.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:48:27 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.7ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:48:28 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.4ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 93ms (Views: 91.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:48:30 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 170ms (Views: 168.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:48:33 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 212ms (Views: 209.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:48:34 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 110ms (Views: 107.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:53:26 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 395ms (Views: 371.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:53:27 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.7ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-f888b84cdab7aea8f232ee14fdfecbbdf6b41ea3c39dc9db984f5ae900d9b10e.css?body=1" for 111.86.194.111 at 2016-03-19 02:53:27 +0000
+
+
+Started GET "/" for 111.86.194.111 at 2016-03-19 02:53:34 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:53:38 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:53:40 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:53:41 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.4ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 82ms (Views: 79.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:53:55 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:53:57 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.8ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 47.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:53:58 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered words/getrandom.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/get" for 111.86.194.111 at 2016-03-19 02:53:58 +0000
+Processing by WordsController#getrandom as HTML
+  [1m[35mWord Load (0.3ms)[0m  SELECT  "words".* FROM "words"  ORDER BY RANDOM() LIMIT 1
+  Rendered words/getrandom.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 122ms (Views: 46.0ms | ActiveRecord: 0.3ms)

@@ -21,6 +21,11 @@ body {
   line-height: 36px;
 }
 
+h1 {
+  font-size: 48px;
+  line-height: 48px;
+}
+
 p {
   font-size: 36px;
 }
@@ -30,7 +35,34 @@ td {
 }
 
 .conjunction {
-  font-size: 240px;
-  line-height: 240px;
+  font-size: 120px;
+  line-height: 120px;
   margin: 5px 5px;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+    line-height: 16px;
+  }
+ 
+  h1 {
+  font-size: 20px;
+  line-height: 20px;
+  }
+ 
+  p {
+    font-size: 16px;
+  }
+  
+  td {
+    font-size: 16px;
+  }
+
+  .conjunction {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 5px 0px;
+  }
+  
 }
